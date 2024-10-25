@@ -49,3 +49,9 @@
             width: 200px;
             height: 200px;
         }}
+
+    @media screen and (max-width:520px){
+        .conocenos div{
+            flex-direction: column;
+        }
+    }   
