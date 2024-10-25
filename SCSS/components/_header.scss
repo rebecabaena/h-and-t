@@ -1,0 +1,43 @@
+/*--index--*/
+header {
+    background-color: cornsilk;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: pink;
+
+        h1 {
+            color: chocolate;
+            font-size: 50px;
+            font-family: fantasy;
+            font-weight: lighter;
+            margin: 20px;
+        }
+    }
+
+    /*BOOTSTRAP BARRA DE NAVEGACIÓN*/
+    nav {
+        div {
+            background-color: rgb(184, 135, 11);
+
+        }
+    }
+
+
+    .container-fluid {
+        a {
+            color: pink;
+        }
+    }
+
+    /* TERMINA ACÁ LA BARRA..*/
+
+
+
+}

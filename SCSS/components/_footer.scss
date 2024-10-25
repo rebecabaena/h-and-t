@@ -1,0 +1,45 @@
+footer{
+    div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        background-color: lightyellow;
+
+        a{   
+            img{
+                width: 70px;
+                height: 70px;
+                margin: 20px;
+                padding: 5px;
+                background-color: pink;
+                border-bottom: 2px solid palevioletred;
+                border-right: 2px solid palevioletred;
+
+            }
+        }
+        a{
+            img{
+                width: 70px;
+                height: 70px;
+                margin: 20px;
+                padding: 5px;
+                background-color: pink;
+                border-bottom: 2px solid palevioletred;
+                border-right: 2px solid palevioletred;
+                
+            }
+        }
+        a{
+            img{ 
+                width: 70px;
+                height: 70px;
+                margin: 20px;
+                padding: 5px;
+                background-color: pink;
+                border-bottom: 2px solid palevioletred;
+                border-right: 2px solid palevioletred;
+                
+            }
+        }
+    }
+}

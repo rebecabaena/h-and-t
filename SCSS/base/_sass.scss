@@ -1,0 +1,21 @@
+
+@mixin flex ($flex, $justify, $align)
+    {
+        display: $flex;
+        justify-content: $justify;
+        align-items: $align;
+
+    }
+
+@mixin espaciado-cl ($margin, $padding)
+    {
+        margin: $margin;
+        padding: $padding;
+
+    }
+
+@mixin h4-dise ($color, $font-size){
+    color:$color;
+    font-size:$font-size;
+}
+
