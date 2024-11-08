@@ -38,9 +38,11 @@
 
 }
 
-.Equipo {
+.equipo {
     background-color: bisque;
+    background: linear-gradient(bisque, lightpink);
     color: darkgoldenrod;
+
 
     h2 {
         color: coral;
@@ -63,6 +65,7 @@
             font-size: 20px;
             padding: 10px;
             text-align: center;
+            
         }
     }
 
@@ -98,6 +101,12 @@
             align-items: center;
             box-shadow: 10px 20px brown;
             background-color: salmon;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                animation: scaleup 0.3s forwards;
+                 
+            }
 
             img {
                 width: 128px;
@@ -116,7 +125,14 @@
                 margin: 15px;
                 border-radius: 10px;
                 box-shadow: 5px 5px darkgoldenrod;
+                
+                }
+
+            a:hover{
+                background-color: bisque;
             }
+
+            
         }
 
         div {
@@ -167,6 +183,7 @@
 
 .contacto {
     background-color: bisque;
+   
 
     h2 {
         color: coral;
@@ -396,6 +413,13 @@ section {
             padding: 15px;
             font-size: 35px;
         }
+        div{
+            display: flex;
+            justify-content: left;
+            align-content: center;
+            flex-direction: column;
+            background-color:chocolate
+        }
 
 
     }
@@ -418,6 +442,8 @@ section {
         @include flex (flex, space-evenly, center);
         @include espaciado-cl(20px, 10px);
         background-color: orange;
+        border-radius: 10px;
+       
 
 
         p {
@@ -425,12 +451,18 @@ section {
             font-weight: 200;
             font-size: large;
             background-color: bisque;
+            background: linear-gradient(bisque,pink);
+            border-radius: 10px;
             font-family: fantasy;
             text-align: center;
             background-position: center;
             background-attachment: fixed;
             margin: 10px;
 
+        }
+
+        img{
+            border-radius: 10px;
         }
 
     }
@@ -493,6 +525,7 @@ section {
 /*-----------------------------------EMPIEZA SERVICIO*----------------------------*/
 .ofrecemos{
     div{
+        background-color: bisque;
 
         h3{      
             color: brown;
@@ -525,6 +558,7 @@ section {
         img{
             margin: 15x;
             padding: 10px;
+            box-shadow: 5px 5px 5px grey;
 
             
 

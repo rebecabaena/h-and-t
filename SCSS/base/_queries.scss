@@ -1,4 +1,4 @@
-/*media query -CONTACTO*/
+
 @media screen and (max-width: 417px) {
     .mapa div iframe{
         width: 200px;
@@ -29,12 +29,12 @@
     
     
     @media screen and (max-width: 545px) {
-        .Equipo div{
+        .equipo div{
             flex-direction: column;
     }}
     
     @media screen and (max-width: 545px) {
-        .Equipo div img{
+        .equipo div img{
             width: 200px;
             height: 200px;
     }}

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@keyframes scaleup {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.03); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -61,22 +67,23 @@ header {
     border-right: 5px solid darkorange;
     margin: 10px; }
 
-.Equipo {
+.equipo {
   background-color: bisque;
+  background: linear-gradient(bisque, lightpink);
   color: darkgoldenrod; }
-  .Equipo h2 {
+  .equipo h2 {
     color: coral;
     background-color: lightyellow;
     text-align: center;
     height: 200;
     padding: 15px;
     font-size: 35px; }
-  .Equipo div {
+  .equipo div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px; }
-    .Equipo div p {
+    .equipo div p {
       font-size: 20px;
       padding: 10px;
       text-align: center; }
@@ -106,7 +113,10 @@ header {
       justify-content: center;
       align-items: center;
       box-shadow: 10px 20px brown;
-      background-color: salmon; }
+      background-color: salmon;
+      transition: transform 0.3s ease; }
+      .servicio div div:hover {
+        animation: scaleup 0.3s forwards; }
       .servicio div div img {
         width: 128px; }
       .servicio div div h3 {
@@ -120,6 +130,8 @@ header {
         margin: 15px;
         border-radius: 10px;
         box-shadow: 5px 5px darkgoldenrod; }
+      .servicio div div a:hover {
+        background-color: bisque; }
     .servicio div div img {
       width: 128px; }
     .servicio div div h3 {
@@ -306,6 +318,12 @@ section .grid-container {
     height: 200;
     padding: 15px;
     font-size: 35px; }
+  .formulario div div {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: column;
+    background-color: chocolate; }
 
 /*TERMINA CONTACTO*/
 /*----------------------------Empieza NOSOTROOOOOOOOOOS-------------------------------*/
@@ -323,17 +341,22 @@ section .grid-container {
   align-items: center;
   margin: 20px;
   padding: 10px;
-  background-color: orange; }
+  background-color: orange;
+  border-radius: 10px; }
   .conocenos div p {
     color: brown;
     font-weight: 200;
     font-size: large;
     background-color: bisque;
+    background: linear-gradient(bisque, pink);
+    border-radius: 10px;
     font-family: fantasy;
     text-align: center;
     background-position: center;
     background-attachment: fixed;
     margin: 10px; }
+  .conocenos div img {
+    border-radius: 10px; }
 
 .conceptos {
   background-color: blanchedalmond; }
@@ -374,37 +397,36 @@ section .grid-container {
 
 /* TERMINA PRODUCTO*/
 /*-----------------------------------EMPIEZA SERVICIO*----------------------------*/
-.ofrecemos div h3 {
-  color: brown;
-  font-size: large;
-  background-color: rgba(240, 167, 167, 0.747);
-  background-attachment: fixed;
-  width: 100%;
-  text-align: center;
-  margin: 10px;
-  padding: 10px; }
-
-.ofrecemos div p {
-  color: darkgoldenrod;
-  margin: 10px;
-  padding: 10px;
-  text-align: left; }
-
-.ofrecemos div h4 {
-  color: brown;
-  font-size: large;
-  text-align: left;
-  margin: 10px;
-  padding: 10px; }
-
-.ofrecemos div ul {
-  color: darkgoldenrod;
-  margin: 10px;
-  text-align: left; }
-
-.ofrecemos div img {
-  margin: 15x;
-  padding: 10px; }
+.ofrecemos div {
+  background-color: bisque; }
+  .ofrecemos div h3 {
+    color: brown;
+    font-size: large;
+    background-color: rgba(240, 167, 167, 0.747);
+    background-attachment: fixed;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px; }
+  .ofrecemos div p {
+    color: darkgoldenrod;
+    margin: 10px;
+    padding: 10px;
+    text-align: left; }
+  .ofrecemos div h4 {
+    color: brown;
+    font-size: large;
+    text-align: left;
+    margin: 10px;
+    padding: 10px; }
+  .ofrecemos div ul {
+    color: darkgoldenrod;
+    margin: 10px;
+    text-align: left; }
+  .ofrecemos div img {
+    margin: 15x;
+    padding: 10px;
+    box-shadow: 5px 5px 5px grey; }
 
 footer div {
   display: flex;
@@ -419,6 +441,8 @@ footer div {
     background-color: pink;
     border-bottom: 2px solid palevioletred;
     border-right: 2px solid palevioletred; }
+  footer div a:hover {
+    background-color: orange; }
   footer div a img {
     width: 70px;
     height: 70px;
@@ -436,7 +460,6 @@ footer div {
     border-bottom: 2px solid palevioletred;
     border-right: 2px solid palevioletred; }
 
-/*media query -CONTACTO*/
 @media screen and (max-width: 417px) {
   .mapa div iframe {
     width: 200px;
@@ -458,11 +481,11 @@ footer div {
     font-weight: 300; } }
 
 @media screen and (max-width: 545px) {
-  .Equipo div {
+  .equipo div {
     flex-direction: column; } }
 
 @media screen and (max-width: 545px) {
-  .Equipo div img {
+  .equipo div img {
     width: 200px;
     height: 200px; } }
 

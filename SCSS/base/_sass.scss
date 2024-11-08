@@ -19,3 +19,11 @@
     font-size:$font-size;
 }
 
+@keyframes scaleup{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.03);
+    }
+}
