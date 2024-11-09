@@ -67,23 +67,23 @@ header {
     border-right: 5px solid darkorange;
     margin: 10px; }
 
-.equipo {
+.profesionales {
   background-color: bisque;
   background: linear-gradient(bisque, lightpink);
   color: darkgoldenrod; }
-  .equipo h2 {
+  .profesionales h2 {
     color: coral;
     background-color: lightyellow;
     text-align: center;
     height: 200;
     padding: 15px;
     font-size: 35px; }
-  .equipo div {
+  .profesionales div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px; }
-    .equipo div p {
+    .profesionales div p {
       font-size: 20px;
       padding: 10px;
       text-align: center; }
