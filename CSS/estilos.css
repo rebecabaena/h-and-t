@@ -159,21 +159,21 @@ header {
       border-radius: 10px;
       box-shadow: 5px 5px darkgoldenrod; }
 
-.contacto {
+.contactanos {
   background-color: bisque; }
-  .contacto h2 {
+  .contactanos h2 {
     color: coral;
     background-color: lightyellow;
     text-align: center;
     height: 200;
     padding: 15px;
     font-size: 35px; }
-  .contacto div {
+  .contactanos div {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px; }
-    .contacto div p {
+    .contactanos div p {
       font-size: 20px;
       padding: 10px;
       text-align: center;
@@ -481,20 +481,20 @@ footer div {
     font-weight: 300; } }
 
 @media screen and (max-width: 545px) {
-  .equipo div {
+  .profesionales div {
     flex-direction: column; } }
 
 @media screen and (max-width: 545px) {
-  .equipo div img {
+  .profesionales div img {
     width: 200px;
     height: 200px; } }
 
 @media screen and (max-width: 545px) {
-  .contacto div {
+  .contactanos div {
     flex-direction: column; } }
 
 @media screen and (max-width: 545px) {
-  .contacto div img {
+  .contactanos div img {
     width: 200px;
     height: 200px; } }
 
